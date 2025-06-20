@@ -104,10 +104,8 @@ EOL
 cat > subject.txt <<EOL
 {recipient-user}, confirm your access
 Revalidate by {date}
-{time} security check required
 {recipient-domain} access expiring
 {recipient-user}, confirm access
-{time} security check
 {recipient-domain} access alert
 Last chance: {date}
 {recipient-user} validation
@@ -116,13 +114,37 @@ Secure {recipient-domain}
 {recipient-user} must confirm
 {recipient-user} re-auth
 Before {date}
-{time} confirm now
 Protect {recipient-domain}
 {recipient-user} validate
+Confirm {recipient-domain} access
+Access expiring {date}
+{recipient-domain} authorization
+Verify your account
+Security check required
+Pending action: #{random-number}
+Update your access
+Time-Sensitive (No Fake Urgency)
+Complete by {date}
+Reminder: validate access
+{recipient-user}, respond by {date}
+Final step to secure account
+Review required
+Case #{random-number}
+{recipient-domain} notice
+{recipient-user}, confirmation needed
+Follow-up: #{random-number}
+Your access update
 EOL
 
 # Create name.txt
 cat > name.txt <<EOL
+IT Security Admin
+Domain Security Team
+Network Operations
+Webmail Revalidation
+CyberSecurity Alert
+System Compliance
+Infrastructure Watch
 IT Governance
 Mail Shield
 Domain Guardian
@@ -132,6 +154,38 @@ Firewall Watch
 Secure Gateway
 Data Bastion
 Threat Response
+Breach Alert
+Intrusion Watchdog
+Proactive IT Enforcement
+Policy Enforcer
+Compliance Warden
+Access Sentinel
+Authentication Guard
+Password Sentinel
+Login Vigilante
+SSO Guardian
+2FA Enforcer
+Identity Sentinel
+Domain & Server Focused
+DNS Protector
+Server Watchtower
+Hosting Safeguard
+SSL Sentinel
+Webmail Revalidation
+Backup Defender
+Server Patrol
+Webmail Defender
+No-Reply Security
+Do Not Ignore: IT Dept
+Verified IT Sender
+Domain Patrol
+Corporate IT Services
+Official Domain Admin
+Enterprise Webmail
+Authorized IT Notifications
+Verified System Admin
+IT Policy Enforcement
+Certified Domain Team
 EOL
 
 # Create list.txt
