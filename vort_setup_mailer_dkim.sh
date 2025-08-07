@@ -72,6 +72,10 @@ command_directory = /usr/sbin
 daemon_directory = /usr/lib/postfix/sbin
 mailbox_size_limit = 0
 recipient_delimiter = +
+milter_default_action = accept
+milter_protocol = 2
+smtpd_milters = inet:localhost:12301
+non_smtpd_milters = inet:localhost:12301
 EOL
 
 # Restart Postfix to apply the changes
